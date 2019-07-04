@@ -510,6 +510,7 @@ div.line_white {
 .flexFacilities {
     width: 800px;
     margin: 0 auto;
+    padding-bottom: 50px;
 }
 
 .flexFacilities>div {
@@ -523,8 +524,24 @@ div.line_white {
     overflow: hidden;
     -webkit-transition: all .3s linear 0s;
     transition: all .5s linear 0s;
+    cursor: pointer;
+    border-radius: 30px;
 }
 
-.flexFacilities>div:nth-child(1).active {
+.flexFacilities>div:nth-child(n).active {
     height: 200px;
+    background-color: black;
+    color: white;
+}
+
+.flexFacilities>div:nth-child(2).active {
+    height: 250px;
+}
+
+.flexFacilities>div:nth-child(3).active {
+    height: 300px;
+}
+
+.flexFacilities>div:nth-child(4).active {
+    height: 170px;
 }
