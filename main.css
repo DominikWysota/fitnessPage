@@ -23,7 +23,7 @@ section {
 header {
     background-color: rgb(233, 57, 71);
     width: 100%;
-    height: 80px;
+    height: 50px;
 }
 
 .menu_container {
@@ -38,6 +38,7 @@ nav {
     width: 50%;
     right: 0px;
     top: 0px;
+    visibility: hidden;
 }
 
 ul {
@@ -64,6 +65,25 @@ a {
     left: 0px;
     top: 0px;
 }
+
+#nav_logo img {
+    height: 50px;
+}
+
+@media screen and (min-width: 1000px) {
+    header {
+        height: 80px;
+    }
+
+    nav {
+        visibility: visible;
+    }
+
+    #nav_logo img {
+        height: 80px;
+    }
+}
+
 
 /* Main First Sektion */
 
@@ -164,6 +184,22 @@ a {
     font-size: 2.5rem;
 }
 
+
+@media screen and (max-width: 1240px) {
+    .background_photo_sf {
+        right: 50%;
+        transform: translateX(50%);
+        width: 100%;
+    }
+
+    .newsletter_container {
+        z-index: 1;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 100%;
+    }
+}
+
 /* Main Second Sektion */
 
 #section_second {
@@ -176,10 +212,8 @@ a {
 #section_second p {
     color: white;
     font-size: 4rem;
-    margin-left: 150px;
     text-transform: uppercase;
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-    line-height: 110px;
 }
 
 #section_second button {
@@ -191,15 +225,40 @@ a {
     color: rgb(233, 57, 71);
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     font-size: 2rem;
-    top: 50%;
-    transform: translateY(-50%);
-    right: 200px;
+    top: 60%;
+    right: 50%;
+    transform: translateX(50%);
     transition: .5s;
     cursor: pointer;
 }
 
 #section_second button:hover {
     background: black;
+}
+
+
+@media screen and (max-width: 1240px) {
+    #section_second {
+        height: 150px;
+    }
+
+    #section_second p {
+        text-align: center;
+        padding-top: 20px;
+    }
+}
+
+@media screen and (min-width: 1240px) {
+    #section_second p {
+        margin-left: 150px;
+        line-height: 110px;
+    }
+
+    #section_second button {
+        top: 50%;
+        transform: translateY(-50%);
+        right: 200px;
+    }
 }
 
 /* Main Third Sektion */
