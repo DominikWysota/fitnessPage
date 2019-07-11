@@ -49,6 +49,7 @@ $(document).ready(function () {
     });
 
     //Nav hamburger
+    $("#menuMobile").fadeOut(1);
     $(".hamburger").click(function () {
         $("#menuMobile").slideToggle();
     });

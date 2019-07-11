@@ -361,7 +361,6 @@ main {
     position: relative;
     flex-basis: 400px;
     flex-shrink: 1;
-    /* min-height: 580px; */
     background-size: cover;
     background-position: center;
     flex-grow: 1;
@@ -415,7 +414,7 @@ main {
 
 #section_third button {
     position: relative;
-    margin-top: 50px;
+    margin: 50px 0;
     width: 150px;
     height: 40px;
     border-width: 0;
@@ -808,4 +807,21 @@ div.line_white {
         width: 60vw;
         height: 30vw;
     }
+}
+
+@media screen and (max-height: 540px) {
+    .photosContainer {
+        width: 60vw;
+        height: 40vw;
+    }
+}
+
+/* Footer - Contact */
+
+footer {
+    width: 100%;
+}
+
+footer div {
+    width: 50%;
 }
