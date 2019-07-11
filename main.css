@@ -61,6 +61,7 @@ nav {
 .menu_container a {
     text-decoration: none;
     color: white;
+    transition: .5s;
 }
 
 .nav_logo {
@@ -105,6 +106,10 @@ nav {
 
 .hamburger:after {
     top: 12px;
+}
+
+.menu_container a:hover {
+    color: black;
 }
 
 @media screen and (min-width: 1000px) {
@@ -532,6 +537,19 @@ div.line_white {
 
 #section_five {
     width: 100%;
+    margin-bottom: 40px;
+}
+
+.kropki {
+    height: 95px;
+    width: 100%;
+    background-image: url(Img/kropki.jpg);
+}
+
+.kropki2 {
+    height: 95px;
+    width: 100%;
+    background-image: url(Img/kropki2.jpg);
 }
 
 .trainers {
@@ -596,21 +614,21 @@ div.line_white {
     padding: 40px 0 10px 0;
 }
 
-#section_five>div:nth-child(2) {
+#section_five>div:nth-child(3) {
     background-color: rgb(233, 57, 71);
     width: 80%;
     height: 6px;
     margin: 2px auto;
 }
 
-#section_five>div:nth-child(3) {
+#section_five>div:nth-child(4) {
     background-color: black;
     width: 40%;
     height: 6px;
     margin: 2px auto;
 }
 
-#section_five>div:nth-child(4) {
+#section_five>div:nth-child(5) {
     background-color: black;
     width: 20%;
     height: 6px;
@@ -637,7 +655,7 @@ div.line_white {
 .facilities {
     position: relative;
     width: 100%;
-    background-color: rgb(44, 44, 44);
+    background-color: #161616;
 }
 
 .facilities>h1 {
@@ -649,7 +667,7 @@ div.line_white {
 }
 
 .flexFacilities {
-    width: 800px;
+    width: 80%;
     margin: 0 auto;
     padding-bottom: 50px;
 }
@@ -687,6 +705,12 @@ div.line_white {
     height: 170px;
 }
 
+@media screen and (min-width: 1240px) {
+    .flexFacilities {
+        width: 800px;
+    }
+}
+
 /* Gallery */
 
 .gallery {
@@ -695,14 +719,20 @@ div.line_white {
     background-color: white;
 }
 
+.gallery>h2 {
+    font-family: Impact, Haettenschweiler, 'Arial Narrow', sans-serif;
+    text-align: center;
+    font-size: 5rem;
+    padding-top: 20px;
+}
+
 .photosContainer {
-    background-color: aqua;
-    margin-top: 40px;
+    margin: 30px 0;
     left: 50%;
     transform: translateX(-50%);
-    position: absolute;
-    width: 80%;
-    height: 500px;
+    position: relative;
+    width: 80vw;
+    height: 60vw;
     overflow: hidden;
 }
 
@@ -710,18 +740,32 @@ div.line_white {
     position: absolute;
     left: 0px;
     width: 50px;
-    height: 500px;
+    height: 100%;
     z-index: 1;
     transition: .3s;
+    cursor: pointer;
+}
+
+.fa-chevron-right {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    font-size: 3rem;
+    top: 50%;
+}
+
+.leftButton i {
+    transform: rotateY(180deg);
 }
 
 .rightButton {
     position: absolute;
     right: 0px;
     width: 50px;
-    height: 500px;
+    height: 100%;
     z-index: 1;
     transition: .3s;
+    cursor: pointer;
 }
 
 .leftButton:hover,
@@ -736,21 +780,32 @@ div.line_white {
 }
 
 .g1 {
-    background-color: aquamarine;
+    background-image: url(Img/Bodybuild1.jpg);
+    background-size: cover;
     left: 0px;
 }
 
 .g2 {
-    background-color: blue;
+    background-image: url(Img/Crossfit1.jpg);
+    background-size: cover;
     left: 100%;
 }
 
 .g3 {
-    background-color: blueviolet;
+    background-image: url(Img/Powerbuild1.jpg);
+    background-size: cover;
     left: 200%;
 }
 
 .g4 {
-    background-color: chartreuse;
+    background-image: url(Img/Bodybuild1.jpg);
+    background-size: cover;
     left: 300%;
+}
+
+@media screen and (min-width: 1240px) {
+    .photosContainer {
+        width: 60vw;
+        height: 30vw;
+    }
 }
